@@ -20,8 +20,22 @@ html {
 input {
   font-size: 1rem;
   padding:0.5rem 0.5rem 0.5rem 0rem;
-  display:block;
   width:100%;
+  border:none;
+  border-bottom: 2px solid #757575;
+  background-color: var(--black);
+  color: white;
+  overflow-x: hidden;
+}
+
+.pdbInput {
+  width: 80%
+}
+
+button {
+  font-size: 1rem;
+  padding:0.5rem 0.5rem 0.5rem 0.5rem;
+  width:20%;
   border:none;
   border-bottom: 2px solid #757575;
   background-color: var(--black);

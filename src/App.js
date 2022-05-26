@@ -28,9 +28,10 @@ function App() {
                 <input
                   type="text"
                   name="pdb"
+                  className="pdbInput"
                   placeholder="PDB ID (e.g. 2WET)"
                 />
-                <button type="submit">Submit</button>
+                <button className = "text-center" type="submit">LOAD</button>
             </form>
             <form>
                 <input
