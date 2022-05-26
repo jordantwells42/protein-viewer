@@ -20,7 +20,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App mx-auto">
       <div className="container-fluid py-3">
         <div className="row">
           <div className="col-lg-2 px-1 justify-content-center">
