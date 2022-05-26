@@ -61,9 +61,14 @@ export default function ProteinViewer(props) {
           } else {
             const atom1 = pickingProxy.contact.atom1;
             const atom2 = pickingProxy.contact.atom2;
+
+            const center1 = pickingProxy.center1;
+            const center2 = pickingProxy.center2;
+
+            const distance = Math.sqrt((center1.x*center1.x - center2.x*center2.x) + (center1.y*center1.y - center2.y*center2.y) + (center1.z*center1.z - center2.z*center2.z))
             
             setTooltip({
-              name: `${atom1.resname} ${atom1.chainid} ${atom1.resno} - ${pickingProxy.contact.type} - ${atom2.resname} ${atom2.chainid} ${atom2.resno}`,
+              name: `${atom1.resname} ${atom1.chainid} ${atom1.resno} - ${pickingProxy.contact.type} (${distance} Å) - ${atom2.resname} ${atom2.chainid} ${atom2.resno}`,
               x: pickingProxy.mouse.position.x,
               y: pickingProxy.mouse.position.y,
             });
