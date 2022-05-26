@@ -62,8 +62,8 @@ export default function ProteinViewer(props) {
             const atom1 = pickingProxy.contact.atom1;
             const atom2 = pickingProxy.contact.atom2;
 
-            const center1 = pickingProxy.center1;
-            const center2 = pickingProxy.center2;
+            const center1 = pickingProxy.contact.center1;
+            const center2 = pickingProxy.contact.center2;
 
             const distance = Math.sqrt((center1.x*center1.x - center2.x*center2.x) + (center1.y*center1.y - center2.y*center2.y) + (center1.z*center1.z - center2.z*center2.z))
             
