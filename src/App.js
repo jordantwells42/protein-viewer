@@ -51,7 +51,7 @@ function App() {
             </form>
           </div>
         
-        <div className="col-lg-10 px-3">
+        <div className="col-lg-10 px-5">
           <ProteinViewer pdb={pdb} chain={inpSele.chain} seq={inpSele.seq} />
         </div>
       </div>
