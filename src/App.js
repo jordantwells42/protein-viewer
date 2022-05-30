@@ -23,7 +23,7 @@ function App() {
     <div className="App mx-auto">
       <div className="container-fluid py-3">
         <div className="row">
-          <div className="col-lg-2 px-1 justify-content-center">
+          <div className="col-2 px-1 justify-content-center">
             <form onSubmit={handleSubmit}>
                 <input
                   type="text"
@@ -51,7 +51,7 @@ function App() {
             </form>
           </div>
         
-        <div className="col-lg-10 mx-3">
+        <div className="col-10 mx-3">
           <ProteinViewer pdb={pdb} chain={inpSele.chain} seq={inpSele.seq} />
         </div>
       </div>
