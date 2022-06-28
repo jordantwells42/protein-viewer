@@ -1,6 +1,6 @@
 # Protein Viewer
 
-Demo here: https://protein-viewer-jtw.vercel.app/
+Demo here: https://protein.jordantwells.com/
 
 View any protein from the RCSB, explore different residues, and look at interactions between residues!
 
