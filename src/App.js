@@ -23,21 +23,22 @@ function App() {
     <div className="App mx-auto">
       <div className="container-fluid py-3">
         <div className="row">
-          <div className="col-lg-2 px-1 justify-content-center">
-            <form onSubmit={handleSubmit}>
-                <input
+          <div className="col-lg-2 justify-content-center">
+            <form className="" onSubmit={handleSubmit}>
+                <input 
                   type="text"
                   name="pdb"
-                  className="pdbInput"
+                  className="pdbInput my-1"
                   placeholder="PDB ID (e.g. 2WET)"
                 />
-                <button className = "px-1 text-right" type="submit">LOAD</button>
+                <button className = "my-3" type="submit">LOAD</button>
             </form>
             <form>
                 <input
                   type="text"
                   name="chain"
                   onChange={handleChange}
+                  className="pdbInput my-1"
                   value={inpSele.chain}
                   placeholder="Chain ID (e.g. A)"
                 />
@@ -45,13 +46,14 @@ function App() {
                   type="text"
                   name="seq"
                   onChange={handleChange}
+                  className="pdbInput my-1"
                   value={inpSele.seq}
                   placeholder="Position (e.g. 10)"
                 />
             </form>
           </div>
         
-        <div className="col-lg-10 px-5">
+        <div className="col-lg-10">
           <ProteinViewer pdb={pdb} chain={inpSele.chain} seq={inpSele.seq} />
         </div>
       </div>
